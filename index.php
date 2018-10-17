@@ -24,10 +24,10 @@
         }
 
         echo '</br></br>';
-        echo '一共组册的用户有 '.count($result). '个';
+        echo 'List of registered users '.count($result);
         echo '<ol>';
         while ($row = $result->fetch_assoc()) {
-            echo '<li>'.$row['username'].'</li>';
+            echo '<li> usersName：'.$row['username'].'</li>';
         }
         echo '</ol>';
     ?>
